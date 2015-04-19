@@ -1,0 +1,459 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  m_Layer: 0
+  m_Name: ShootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400002}
+  - 114: {fileID: 11400002}
+  - 65: {fileID: 6500000}
+  m_Layer: 0
+  m_Name: 'TowerTurret_Canon '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100004
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400004}
+  - 33: {fileID: 3300000}
+  - 23: {fileID: 2300000}
+  m_Layer: 0
+  m_Name: Temperature
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100006
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400006}
+  - 33: {fileID: 3300002}
+  - 23: {fileID: 2300002}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100008
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400008}
+  - 33: {fileID: 3300004}
+  - 23: {fileID: 2300004}
+  m_Layer: 0
+  m_Name: Body
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400010}
+  m_Layer: 0
+  m_Name: TowerProva
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: -2.18556941e-08, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.138260692, y: .5, z: .424999952}
+  m_LocalScale: {x: .5, y: .5, z: .5}
+  m_Children: []
+  m_Father: {fileID: 400006}
+  m_RootOrder: 0
+--- !u!4 &400002
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .420897782, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400010}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &400004
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_LocalRotation: {x: 2.18556941e-08, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400010}
+  m_RootOrder: 2
+--- !u!4 &400006
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_LocalRotation: {x: 2.18556941e-08, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.4505806e-09, y: 0, z: 2.23517418e-08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400000}
+  m_Father: {fileID: 400010}
+  m_RootOrder: 1
+--- !u!4 &400008
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_LocalRotation: {x: 2.18556941e-08, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.4505806e-09, y: 0, z: 2.23517418e-08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400010}
+  m_RootOrder: 0
+--- !u!4 &400010
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0724016726, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children:
+  - {fileID: 400008}
+  - {fileID: 400006}
+  - {fileID: 400004}
+  m_Father: {fileID: 400002}
+  m_RootOrder: 0
+--- !u!23 &2300000
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 54caaafa7f5bfe646898629928805a96, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!23 &2300002
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: e51fbe90caeacba44b30c0c5fa3f46e8, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!23 &2300004
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: e51fbe90caeacba44b30c0c5fa3f46e8, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &3300000
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Mesh: {fileID: 4300002, guid: c9b4f0b4197c0624e8dfcc44e866fe9b, type: 3}
+--- !u!33 &3300002
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Mesh: {fileID: 4300004, guid: c9b4f0b4197c0624e8dfcc44e866fe9b, type: 3}
+--- !u!33 &3300004
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Mesh: {fileID: 4300000, guid: c9b4f0b4197c0624e8dfcc44e866fe9b, type: 3}
+--- !u!65 &6500000
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.5, z: 1}
+  m_Center: {x: 0, y: .75, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def1593b2f69eb04bb68524e538cbeec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootPoint:
+  - {fileID: 400000}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fbe6e6b2cb2d4ead911fc6134ee6c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitName: CanonTower
+  icon: {fileID: 2800000, guid: 5a34d1527a87fa643a25bfd9b4221fe9, type: 3}
+  HPAttribute:
+    fullHP: 10
+    HP: 10
+    overlayHP: {fileID: 0}
+    overlayBase: {fileID: 0}
+    alwaysShowOverlay: 0
+  thisT: {fileID: 0}
+  thisObj: {fileID: 100002}
+  turretBuildAnimationBody: {fileID: 0}
+  turretBuildAnimation: {fileID: 7400000, guid: 97e5b309c64c7ab4ab22003341af5f16,
+    type: 2}
+  baseBuildAnimationBody: {fileID: 0}
+  baseBuildAnimation: {fileID: 7400000, guid: 4b5ff9f3c0954894f9007104084cd2ca, type: 2}
+  turretFireAnimationBody: {fileID: 0}
+  turretFireAnimation: {fileID: 0}
+  baseFireAnimationBody: {fileID: 0}
+  baseFireAnimation: {fileID: 0}
+  specialID: -1
+  type: 0
+  targetMode: 2
+  targetPriority: 0
+  levelCap: 3
+  description: Causing aoe damage and stun target.
+  baseStat:
+    cost: 10
+    costs: 0f000000
+    damage: .5
+    cooldown: 2
+    clipSize: 0
+    reloadDuration: 1
+    range: 5
+    minRange: 0
+    aoeRadius: 2
+    stunDuration: .300000012
+    slow:
+      duration: 0
+      slowFactor: 0
+    dot:
+      damage: 1
+      duration: 0
+      interval: 0
+    buff:
+      buffID: 0
+      damageBuff: 0
+      cooldownBuff: 0
+      rangeBuff: 0
+      regenHP: 1
+    incomes: 00000000
+    buildDuration: 1
+    shootObject: {fileID: 400000, guid: 0c0921e55d1d147939ab415aa2c04375, type: 2}
+    barrelObject: {fileID: 0}
+    turretObject: {fileID: 400006}
+    baseObject: {fileID: 400008}
+    turretBuildAnimationBody: {fileID: 0}
+    turretBuildAnimation: {fileID: 0}
+    baseBuildAnimationBody: {fileID: 0}
+    baseBuildAnimation: {fileID: 0}
+    turretFireAnimationBody: {fileID: 0}
+    turretFireAnimation: {fileID: 7400000, guid: 7bbf90b11f5166a4f9c22e21dffe7ae4,
+      type: 2}
+    baseFireAnimationBody: {fileID: 0}
+    baseFireAnimation: {fileID: 0}
+  upgradeStat:
+  - cost: 10
+    costs: 00000000
+    damage: 2
+    cooldown: 2
+    clipSize: 0
+    reloadDuration: 1
+    range: 8
+    minRange: 0
+    aoeRadius: 2
+    stunDuration: .300000012
+    slow:
+      duration: 0
+      slowFactor: 0
+    dot:
+      damage: 1
+      duration: 0
+      interval: 0
+    buff:
+      buffID: 0
+      damageBuff: .100000001
+      cooldownBuff: .100000001
+      rangeBuff: .100000001
+      regenHP: 1
+    incomes: 00000000
+    buildDuration: 1
+    shootObject: {fileID: 0}
+    barrelObject: {fileID: 0}
+    turretObject: {fileID: 400006}
+    baseObject: {fileID: 400008}
+    turretBuildAnimationBody: {fileID: 0}
+    turretBuildAnimation: {fileID: 0}
+    baseBuildAnimationBody: {fileID: 0}
+    baseBuildAnimation: {fileID: 0}
+    turretFireAnimationBody: {fileID: 0}
+    turretFireAnimation: {fileID: 7400000, guid: 7bbf90b11f5166a4f9c22e21dffe7ae4,
+      type: 2}
+    baseFireAnimationBody: {fileID: 0}
+    baseFireAnimation: {fileID: 0}
+  - cost: 10
+    costs: 00000000
+    damage: 3
+    cooldown: 2
+    clipSize: 0
+    reloadDuration: 1
+    range: 8
+    minRange: 0
+    aoeRadius: 2
+    stunDuration: .300000012
+    slow:
+      duration: 0
+      slowFactor: 0
+    dot:
+      damage: 1
+      duration: 0
+      interval: 0
+    buff:
+      buffID: 0
+      damageBuff: .100000001
+      cooldownBuff: .100000001
+      rangeBuff: .100000001
+      regenHP: 1
+    incomes: 00000000
+    buildDuration: 1
+    shootObject: {fileID: 0}
+    barrelObject: {fileID: 0}
+    turretObject: {fileID: 0}
+    baseObject: {fileID: 0}
+    turretBuildAnimationBody: {fileID: 0}
+    turretBuildAnimation: {fileID: 0}
+    baseBuildAnimationBody: {fileID: 0}
+    baseBuildAnimation: {fileID: 0}
+    turretFireAnimationBody: {fileID: 0}
+    turretFireAnimation: {fileID: 0}
+    baseFireAnimationBody: {fileID: 0}
+    baseFireAnimation: {fileID: 0}
+  mineOneOff: 1
+  aoeConeAngle: 10
+  moveSpeed: 0
+  immuneToSlow: 0
+  buildingEffect: {fileID: 0}
+  buildingDoneEffect: {fileID: 0}
+  shootSound: {fileID: 8300000, guid: 45407806c88a8df43a300a9d0e4b3d72, type: 3}
+  buildingSound: {fileID: 0}
+  builtSound: {fileID: 0}
+  soldSound: {fileID: 0}
+  shootPoint: []
+  destroyEffect: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100002}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

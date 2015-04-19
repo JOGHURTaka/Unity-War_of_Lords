@@ -1,0 +1,461 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400004}
+  m_Layer: 0
+  m_Name: ShootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 33: {fileID: 3300004}
+  - 23: {fileID: 2300004}
+  m_Layer: 0
+  m_Name: Temperature
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400006}
+  - 33: {fileID: 3300002}
+  - 23: {fileID: 2300002}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400002}
+  - 33: {fileID: 3300000}
+  - 23: {fileID: 2300000}
+  m_Layer: 0
+  m_Name: Body
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400008}
+  - 114: {fileID: 11400002}
+  m_Layer: 0
+  m_Name: 'TowerBeam '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_LocalRotation: {x: 2.18556941e-08, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400008}
+  m_RootOrder: 2
+--- !u!4 &400002
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_LocalRotation: {x: 2.18556941e-08, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.4505806e-09, y: 0, z: 2.23517418e-08}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400008}
+  m_RootOrder: 0
+--- !u!4 &400004
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: -2.18556941e-08, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .230435848, y: .11339207, z: .292931408}
+  m_LocalScale: {x: .333333343, y: .333333343, z: .333333343}
+  m_Children: []
+  m_Father: {fileID: 400006}
+  m_RootOrder: 0
+--- !u!4 &400006
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_LocalRotation: {x: 2.18556941e-08, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.4505806e-09, y: .682034075, z: .000401955098}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400004}
+  m_Father: {fileID: 400008}
+  m_RootOrder: 1
+--- !u!4 &400008
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children:
+  - {fileID: 400002}
+  - {fileID: 400006}
+  - {fileID: 400000}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!23 &2300000
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 466c412d8c7e48c4792f481f6b4cea35, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!23 &2300002
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 466c412d8c7e48c4792f481f6b4cea35, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!23 &2300004
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 54caaafa7f5bfe646898629928805a96, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &3300000
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Mesh: {fileID: 4300000, guid: 36215181e56dda44b8bb066f0715cfd9, type: 3}
+--- !u!33 &3300002
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Mesh: {fileID: 4300004, guid: 36215181e56dda44b8bb066f0715cfd9, type: 3}
+--- !u!33 &3300004
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Mesh: {fileID: 4300002, guid: 36215181e56dda44b8bb066f0715cfd9, type: 3}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def1593b2f69eb04bb68524e538cbeec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootPoint:
+  - {fileID: 400004}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fbe6e6b2cb2d4ead911fc6134ee6c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitName: BeamTower
+  icon: {fileID: 2800000, guid: 1053a463a537ae446a725de2f6fdd59c, type: 3}
+  HPAttribute:
+    fullHP: 10
+    HP: 10
+    overlayHP: {fileID: 0}
+    overlayBase: {fileID: 0}
+    alwaysShowOverlay: 0
+  thisT: {fileID: 0}
+  thisObj: {fileID: 100008}
+  turretBuildAnimationBody: {fileID: 0}
+  turretBuildAnimation: {fileID: 0}
+  baseBuildAnimationBody: {fileID: 0}
+  baseBuildAnimation: {fileID: 0}
+  turretFireAnimationBody: {fileID: 0}
+  turretFireAnimation: {fileID: 0}
+  baseFireAnimationBody: {fileID: 0}
+  baseFireAnimation: {fileID: 0}
+  specialID: -1
+  type: 0
+  targetMode: 0
+  targetPriority: 2
+  levelCap: 3
+  description: "Beam Tower. Causing damage over time on target.\nusing System.Collections;\r\n\r\npublic
+    class Blocks : MonoBehaviour\r\n{\r\n\t\r\n\t//Public variable for the size of
+    the terrain, width and heigth\r\n\tpublic Vector2 Size = new Vector2( 20 , 20
+    );\r\n\t\r\n\t//Height multiplies the final noise output\r\n\tpublic float Height
+    = 10.0f;\r\n\t\r\n\t//This divides the noise frequency\r\n\tpublic float NoiseSize
+    = 10.0f;\r\n\t\r\n\tprivate GameObject root;\r\n\r\n\t\r\n\tvoid OnGUI ()\r\n\t{\r\n\t\t\r\n\t\t//Make
+    a button that generates when you press it\r\n\t\tif(GUI.Button( new Rect( 10,
+    10, 100, 30 ), \"Generate\" ))\r\n\t\t{\r\n\t\t\t\r\n\t\t\t//Generate!\r\n\t\t\tGenerate();\r\n\r\n\t\t}\r\n\t\t\r\n\t}\r\n\t\r\n\t//Function
+    that inputs the position and spits out a float value based on the perlin noise\r\n\tpublic
+    float PerlinNoise(float x, float y)\r\n\t{\r\n\t\t//Generate a value from the
+    given position, position is divided to make the noise more frequent.\r\n\t\tfloat
+    noise = Mathf.PerlinNoise( x / NoiseSize, y / NoiseSize );\r\n\t\t\r\n\t\t//Return
+    the noise value\r\n\t\treturn noise * Height;\r\n\t\t\r\n\t}\r\n\t\r\n\t//Call
+    this function to generate the terrain\r\n\tvoid Generate ()\r\n\t{\r\n\t\t\r\n\t\t//If
+    we find a gameobject called terrain, there's a high\r\n\t\t//chance that we have
+    the previous terrain still there\r\n\t\t//So, let's delete it\r\n\t\tDestroy(GameObject.Find(\"Terrain\"));\r\n\r\n\t\t\r\n\t\t//Create
+    a new empty gameobject that will store all the objects spawned for extra neatness\r\n\t\troot
+    = new GameObject(\"Terrain\");\r\n\t\t\r\n\t\t//Put the root object at the center
+    of the boxes\r\n\t\troot.transform.position = new Vector3( Size.x/2, 0, Size.y/2
+    );\r\n\t\t\r\n\t\t//For loop for x-axis\r\n\t\tfor(int i = 0; i <= Size.x; i++)\r\n\t\t{\r\n\t\t\t\r\n\t\t\t//For
+    loop for z-axis\r\n\t\t\tfor(int p = 0; p <= Size.y; p++)\r\n\t\t\t{\r\n\t\t\t\t\r\n\t\t\t\tGameObject
+    box = GameObject.CreatePrimitive(PrimitiveType.Cube);\r\n\t\t\t\t\r\n\t\t\t\tbox.transform.position
+    = new Vector3( i, PerlinNoise( i, p ), p);\r\n\t\t\t\tbox.transform.parent = root.transform;\r\n\t\t\t\t\r\n\t\t\t}\r\n\t\t\t\r\n\t\t}\r\n\t\t\t\t\t\r\n\t\t//Move
+    the root at the origin.\r\n\t\troot.transform.position = Vector3.zero;\r\n\t\r\n\t}\r\nusing
+    UnityEngine;\r\nusing System.Collections;\r\n\r\npublic class Blocks : MonoBehaviour\r\n{\r\n\t\r\n\t//Public
+    variable for the size of the terrain, width and heigth\r\n\tpublic Vector2 Size
+    = new Vector2( 20 , 20 );\r\n\t\r\n\t//Height multiplies the final noise output\r\n\tpublic
+    float Height = 10.0f;\r\n\t\r\n\t//This divides the noise frequency\r\n\tpublic
+    float NoiseSize = 10.0f;\r\n\t\r\n\tprivate GameObject root;\r\n\r\n\t\r\n\tvoid
+    OnGUI ()\r\n\t{\r\n\t\t\r\n\t\t//Make a button that generates when you press it\r\n\t\tif(GUI.Button(
+    new Rect( 10, 10, 100, 30 ), \"Generate\" ))\r\n\t\t{\r\n\t\t\t\r\n\t\t\t//Generate!\r\n\t\t\tGenerate();\r\n\r\n\t\t}\r\n\t\t\r\n\t}\r\n\t\r\n\t//Function
+    that inputs the position and spits out a float value based on the perlin noise\r\n\tpublic
+    float PerlinNoise(float x, float y)\r\n\t{\r\n\t\t//Generate a value from the
+    given position, position is divided to make the noise more frequent.\r\n\t\tfloat
+    noise = Mathf.PerlinNoise( x / NoiseSize, y / NoiseSize );\r\n\t\t\r\n\t\t//Return
+    the noise value\r\n\t\treturn noise * Height;\r\n\t\t\r\n\t}\r\n\t\r\n\t//Call
+    this function to generate the terrain\r\n\tvoid Generate ()\r\n\t{\r\n\t\t\r\n\t\t//If
+    we find a gameobject called terrain, there's a high\r\n\t\t//chance that we have
+    the previous terrain still there\r\n\t\t//So, let's delete it\r\n\t\tDestroy(GameObject.Find(\"Terrain\"));\r\n\r\n\t\t\r\n\t\t//Create
+    a new empty gameobject that will store all the objects spawned for extra neatness\r\n\t\troot
+    = new GameObject(\"Terrain\");\r\n\t\t\r\n\t\t//Put the root object at the center
+    of the boxes\r\n\t\troot.transform.position = new Vector3( Size.x/2, 0, Size.y/2
+    );\r\n\t\t\r\n\t\t//For loop for x-axis\r\n\t\tfor(int i = 0; i <= Size.x; i++)\r\n\t\t{\r\n\t\t\t\r\n\t\t\t//For
+    loop for z-axis\r\n\t\t\tfor(int p = 0; p <= Size.y; p++)\r\n\t\t\t{\r\n\t\t\t\t\r\n\t\t\t\tGameObject
+    box = GameObject.CreatePrimitive(PrimitiveType.Cube);\r\n\t\t\t\t\r\n\t\t\t\tbox.transform.position
+    = new Vector3( i, PerlinNoise( i, p ), p);\r\n\t\t\t\tbox.transform.parent = root.transform;\r\n\t\t\t\t\r\n\t\t\t}\r\n\t\t\t\r\n\t\t}\r\n\t\t\t\t\t\r\n\t\t//Move
+    the root at the origin.\r\n\t\troot.transform.position = Vector3.zero;\r\n\t\r\n\t}\r\n"
+  baseStat:
+    cost: 10
+    costs: 14000000
+    damage: 1.5
+    cooldown: 1.5
+    clipSize: -1
+    reloadDuration: 1
+    range: 8
+    minRange: 0
+    aoeRadius: 0
+    stunDuration: 0
+    slow:
+      duration: 0
+      slowFactor: 0
+    dot:
+      damage: .5
+      duration: 40
+      interval: .5
+    buff:
+      buffID: 0
+      damageBuff: 0
+      cooldownBuff: 0
+      rangeBuff: 0
+      regenHP: 1
+    incomes: 00000000
+    buildDuration: 1
+    shootObject: {fileID: 400000, guid: 7a032c4397b47ce47970ba285be493eb, type: 2}
+    barrelObject: {fileID: 0}
+    turretObject: {fileID: 400006}
+    baseObject: {fileID: 400002}
+    turretBuildAnimationBody: {fileID: 0}
+    turretBuildAnimation: {fileID: 0}
+    baseBuildAnimationBody: {fileID: 0}
+    baseBuildAnimation: {fileID: 0}
+    turretFireAnimationBody: {fileID: 0}
+    turretFireAnimation: {fileID: 0}
+    baseFireAnimationBody: {fileID: 0}
+    baseFireAnimation: {fileID: 0}
+  upgradeStat:
+  - cost: 10
+    costs: 00000000
+    damage: 2
+    cooldown: 1.5
+    clipSize: -1
+    reloadDuration: 1
+    range: 8
+    minRange: 0
+    aoeRadius: 0
+    stunDuration: 0
+    slow:
+      duration: 0
+      slowFactor: 0
+    dot:
+      damage: .5
+      duration: 2
+      interval: .5
+    buff:
+      buffID: 0
+      damageBuff: .100000001
+      cooldownBuff: .100000001
+      rangeBuff: .100000001
+      regenHP: 1
+    incomes: 00000000
+    buildDuration: 1
+    shootObject: {fileID: 0}
+    barrelObject: {fileID: 0}
+    turretObject: {fileID: 0}
+    baseObject: {fileID: 0}
+    turretBuildAnimationBody: {fileID: 0}
+    turretBuildAnimation: {fileID: 0}
+    baseBuildAnimationBody: {fileID: 0}
+    baseBuildAnimation: {fileID: 0}
+    turretFireAnimationBody: {fileID: 0}
+    turretFireAnimation: {fileID: 0}
+    baseFireAnimationBody: {fileID: 0}
+    baseFireAnimation: {fileID: 0}
+  - cost: 10
+    costs: 00000000
+    damage: 3
+    cooldown: 1.5
+    clipSize: -1
+    reloadDuration: 1
+    range: 8
+    minRange: 0
+    aoeRadius: 0
+    stunDuration: 0
+    slow:
+      duration: 0
+      slowFactor: 0
+    dot:
+      damage: .5
+      duration: 2
+      interval: .5
+    buff:
+      buffID: 0
+      damageBuff: .100000001
+      cooldownBuff: .100000001
+      rangeBuff: .100000001
+      regenHP: 1
+    incomes: 00000000
+    buildDuration: 1
+    shootObject: {fileID: 0}
+    barrelObject: {fileID: 0}
+    turretObject: {fileID: 0}
+    baseObject: {fileID: 0}
+    turretBuildAnimationBody: {fileID: 0}
+    turretBuildAnimation: {fileID: 0}
+    baseBuildAnimationBody: {fileID: 0}
+    baseBuildAnimation: {fileID: 0}
+    turretFireAnimationBody: {fileID: 0}
+    turretFireAnimation: {fileID: 0}
+    baseFireAnimationBody: {fileID: 0}
+    baseFireAnimation: {fileID: 0}
+  mineOneOff: 1
+  aoeConeAngle: 10
+  moveSpeed: 0
+  immuneToSlow: 0
+  buildingEffect: {fileID: 0}
+  buildingDoneEffect: {fileID: 0}
+  shootSound: {fileID: 8300000, guid: b7c0bc83b2093744f896cf625b65f4ad, type: 3}
+  buildingSound: {fileID: 0}
+  builtSound: {fileID: 0}
+  soldSound: {fileID: 0}
+  shootPoint: []
+  destroyEffect: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100008}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
